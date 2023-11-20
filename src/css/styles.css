@@ -1,7 +1,9 @@
 /*Estilos en cada página*/
-
+/*Pagina home*/
+@import url(../css/_home.css);
 /*Pagina create*/
 @import url(../css/_create.css);
+
 
 /*Tipografia*/
 /*Importa desde Google Fonts Raleway con font-weight: 700, 500 y 400*/
@@ -77,22 +79,30 @@ font-size: 0.75rem;
     text-transform: uppercase;
 }
 
+:root {
+    --main-color: #FF3333;
+    --white-color: #ffffff;
+    --gray-1-color: #333333;
+    --dark-gray-color: #30343F;
+    --link-blue-color: #1D84B5;
+  }
+
 /*colores*/
     /*Para textos*/
 .color-white {
-    color: #ffffff;
+    color: var(--white-color);
 }
 .color-light-gray {
     color: #B9B9B9;
 }
 .color-dark-gray {
-    color: #30343F;
+    color: var(--dark-gray-color);
 }
 .color-red {
-    color: #FF3333;
+    color: var(--main-color);
 }
 .color-gray-1 {
-    color: #333333;
+    color: var(--gray-1-color);
 }
 .color-black {
     color: #111111;
@@ -104,24 +114,24 @@ font-size: 0.75rem;
     color: #000000;
 }
 .color-link-blue {
-    color: #1D84B5;
+    color: var(--link-blue-color);
 }
 
-    /*Para background*/
+/*Para background*/
 .bg-white {
-    color: #ffffff;
+    color: var(--white-color);
 }
 .bg-light-gray {
     background-color: #B9B9B9;
 }
 .bg-dark-gray {
-    background-color: #30343F;
+    background-color: var(--dark-gray-color);
 }
 .bg-red {
-    background-color: #FF3333;
+    background-color: var(--main-color);
 }
 .bg-gray-1 {
-    background-color: #333333;
+    background-color: var(--gray-1-color);
 }
 .bg-black {
     background-color: #111111;
@@ -133,24 +143,24 @@ font-size: 0.75rem;
     background-color: #000000;
 }
 .bg-link-blue {
-    background-color: #1D84B5;
+    background-color: var(--link-blue-color);
 }
 
-    /*Para bordes*/
+/*Para bordes*/
 .bc-white {
-    border-color: white;
+    border-color: var(--white-color);
 }
 .bc-light-gray {
     border-color: #B9B9B9;
 }
 .bc-dark-gray {
-    border-color: #30343F;
+    border-color: var(--dark-gray-color);
 }
 .bc-red {
-    border-color: #FF3333;
+    border-color: var(--main-color);
 }
 .bc-gray-1 {
-    border-color: #333333;
+    border-color: var(--gray-1-color);
 }
 .bc-black {
     border-color: #111111;
@@ -162,9 +172,51 @@ font-size: 0.75rem;
     border-color: #000000;
 }
 .bc-link-blue {
-    border-color: #1D84B5;
+    border-color: var(--link-blue-color);
+}
+.b-b-1 {
+    border-bottom: 1px solid;
+}
+.b-bc-red {
+    border-bottom-color:var(--main-color) ;
 }
 
+/*Configuracion para body general */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+.body-config {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0px;
+    width: 100%;
+}
+/*container*/
+.container {
+    width: 100%;
+    margin: 0px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
 
 /*Estilo de botones generales*/
 
+.button-rounded {
+    border-radius: 2rem;
+    min-width: 200px;
+    border: transparent;
+    outline: none;
+}
+.button-rounded:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
