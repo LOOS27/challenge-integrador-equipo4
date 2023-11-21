@@ -5,6 +5,8 @@
 @import url(../css/_shop.css);
 /*Pagina create*/
 @import url(../css/_create.css);
+/*Pagina carrito*/
+@import url(../css/_carrito.css);
 
 
 /*Tipografia*/
@@ -91,10 +93,17 @@ font-size: 0.75rem;
     --black-color: #111111;
     --black-2-color: #1F1F1F;
     --black-3-color: #000000;
+    --white-off-color: #FAFAFF;
+    --secondary-color: #F24E1E;
+
+
   }
 
 /*colores*/
     /*Para textos*/
+.color-white-off {
+    color: var(--white-off-color);
+}
 .color-white {
     color: var(--white-color);
 }
@@ -106,6 +115,9 @@ font-size: 0.75rem;
 }
 .color-red {
     color: var(--main-color);
+}
+.color-secondary {
+    color: var(--secondary-color);
 }
 .color-gray-1 {
     color: var(--gray-1-color);
@@ -125,7 +137,10 @@ font-size: 0.75rem;
 
 /*Para background*/
 .bg-white {
-    color: var(--white-color);
+    background-color: var(--white-color);
+}
+.bg-white-off {
+    background-color: var(--white-off-color);
 }
 .bg-light-gray {
     background-color: var(--light-gray-color);
@@ -135,6 +150,9 @@ font-size: 0.75rem;
 }
 .bg-red {
     background-color: var(--main-color);
+}
+.bg-secondary {
+    background-color: var(--secondary-color);
 }
 .bg-gray-1 {
     background-color: var(--gray-1-color);
@@ -153,6 +171,9 @@ font-size: 0.75rem;
 }
 
 /*Para bordes*/
+.bc-white-off {
+    border-color: var(--white-off-color);
+}
 .bc-white {
     border-color: var(--white-color);
 }
@@ -164,6 +185,9 @@ font-size: 0.75rem;
 }
 .bc-red {
     border-color: var(--main-color);
+}
+.bc-secondary {
+    border-color: var(--secondary-color);
 }
 .bc-gray-1 {
     border-color: var(--gray-1-color);
@@ -182,6 +206,18 @@ font-size: 0.75rem;
 }
 .b-b-1 {
     border-bottom: 1px solid;
+}
+.b-b-2 {
+    border-bottom: 2px solid;
+}
+.b-b-3 {
+    border-bottom: 3px solid;
+}
+.b-b-4 {
+    border-bottom: 4px solid;
+}
+.b-b-5 {
+    border-bottom: 5px solid;
 }
 .b-bc-red {
     border-bottom-color:var(--main-color) ;
