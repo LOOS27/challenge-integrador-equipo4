@@ -50,8 +50,10 @@ font-size: 2.625rem;
 }
 .fs-2-375 {
 font-size: 2.375rem;
-
 }
+.fs-2 {
+    font-size: 2rem;
+    }
 .fs-1-5 {
 font-size: 1.5rem;
 
@@ -255,6 +257,10 @@ html {
     color: var(--white-color);
     cursor: pointer;
 }
+.button-rectangle {
+    border: transparent;
+    box-shadow: none;
+}
 
 .p-relative {
     position: relative;
@@ -310,6 +316,12 @@ html {
 }
 .j-content-between {
     justify-content: space-between;
+}
+.j-content-end {
+    justify-content: end;
+}
+.a-items-end {
+    align-items: end;
 }
 .a-items-stretch {
     align-items: stretch;
@@ -448,4 +460,7 @@ html {
 }
 .m-b-0-5 {
     margin-bottom: 0.5rem;
+}
+.a-t-e {
+    text-align: right;
 }
