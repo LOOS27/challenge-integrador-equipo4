@@ -5,6 +5,8 @@
 @import url(../css/_shop.css);
 /*Pagina create*/
 @import url(../css/_create.css);
+/*Pagina admin*/
+@import url(../css/_admin.css);
 /*Pagina carrito*/
 @import url(../css/_carrito.css);
 
@@ -317,6 +319,7 @@ html {
 .gap-1 {
     gap: 1rem;
 }
+
 
 /*Padding*/
 

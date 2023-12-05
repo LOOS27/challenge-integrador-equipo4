@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no"/>
+        <title>Funkoshop - Admin</title>
+        <link rel="stylesheet" href="src/css/styles.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <div>
+                Header
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <div class="container">
+               <div class="admin-container">
+                <div class="d-flex gap-1 a-items-center m-b-1">
+                    <label for="search"><img class="icono-search-size" src="src/img/buscar.svg" alt="search"></label>
+                    <input type="search" id="search" name="admin-search" placeholder="Código, nombre o categoria" class="input-search-style ff-inter fw-500 fs-1-25 color-light-gray w-100" />
+                </div>
+                <div class="title p-t-1 d-flex j-content-between a-items-center">
+                    <h1 class="m-0 ff-raleway fw-700 fs-2-625 color-black-2 tt-upper">Listado de productos</h1>
+                    <button type="button" class="ff-inter fw-700 fs-1-5 color-black-2 tt-upper d-flex a-items-center gap-1 button-transparent-style">Agregar<img src="src/img/agregar.svg" alt="Agregar"></button>
+                </div>
+
+                <div class="header-listado-productos">
+                    <div>
+                        <h2 class="ff-inter fw-700 fs-1-5 color-black-2 m-t-0 m-b-0">ID</h2>
+                    </div>
+                    <div>
+                        <h2 class="ff-inter fw-700 fs-1-5 color-black-2 m-t-0 m-b-0">Código</h2>
+                    </div>
+                    <div>
+                        <h2 class="ff-inter fw-700 fs-1-5 color-black-2 m-t-0 m-b-0">Nombre del producto</h2>
+                    </div>
+                    <div>
+                        <h2 class="ff-inter fw-700 fs-1-5 color-black-2 m-t-0 m-b-0">Categoria</h2>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div class="body-listado-productos">
+                    <div class="producto-item p-t-1 p-b-1">
+                        <div>
+                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0">1</h2>
+                        </div>
+                        <div>
+                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0">STW001001</h2>
+                        </div>
+                        <div>
+                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0">Baby Yoda Blueball</h2>
+                        </div>
+                        <div>
+                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0 tt-upper">STAR WARS
+                            </h2>
+                        </div>
+                        <div class="d-flex a-items-center gap-1 j-content-center">
+                            <button class="button-transparent-style"><img src="src/img/editar.svg" alt=""></button>
+                            <button class="button-transparent-style"><img src="src/img/eliminar.svg" alt=""></button>
+                        </div>
+                    </div>
+
+                </div>
+               </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <div>
+                Footer
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
