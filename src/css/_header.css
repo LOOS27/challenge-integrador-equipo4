@@ -1,0 +1,42 @@
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .imago {
+    max-width: 5rem;
+    width: 100%;
+}
+header .logo {
+    max-width: 16.875rem;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    list-style: none;
+    padding: 0.5rem;
+    min-width: 200px;
+    top: 1.5rem;
+    right: 0rem;
+    margin: 0px;
+    border-top: 2px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+}
+.dropdown-item:hover {
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+#dropdown-menu {
+    display: none;
+}

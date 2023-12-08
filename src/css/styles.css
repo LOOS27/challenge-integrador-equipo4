@@ -1,4 +1,6 @@
 /*Estilos en cada página*/
+/*Pagina header*/
+@import url(../css/_header.css);
 /*Pagina home*/
 @import url(../css/_home.css);
 /*Pagina Shop*/
