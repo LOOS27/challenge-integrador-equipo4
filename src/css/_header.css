@@ -40,3 +40,55 @@ header .logo {
 #dropdown-menu {
     display: none;
 }
+.quantify {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    background-color: var(--main-color);
+    padding: 0.2rem 0.1rem;
+    color: var(--white-color);
+    margin: 0rem;
+    border-radius: 0.85rem;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 0.85rem;
+    min-width: 21px;
+}
+.cart-container {
+    position: relative;
+}
+.cart-icon {
+    width: 33px;
+    padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .header-container .items-container {
+        flex-direction: column;
+    }
+    .header-container nav {
+        flex-direction: column;
+    }
+    .header-container .dropdown-menu {
+        position: initial;
+        margin-top: 1rem;
+        padding: 1rem 0rem;
+    }
+    .header-container .dropdown {
+        width: 100%;
+    }
+    .header-container #dropdown-toggle {
+        width: 100%;
+        min-width: 200px;
+    }
+    .dropdown-item a {
+        width: 100%;
+    }
+    .header-container-right {
+        width: 100%;
+    }
+    .header-container nav > .link:not(:last-child) {
+        padding-top: 1rem;
+        border-top: 1px solid var(--white-color);
+    }
+  }

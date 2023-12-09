@@ -1,6 +1,8 @@
 /*Estilos en cada página*/
 /*Pagina header*/
 @import url(../css/_header.css);
+/*Pagina footer*/
+@import url(../css/_footer.css);
 /*Pagina home*/
 @import url(../css/_home.css);
 /*Pagina Shop*/
@@ -11,6 +13,8 @@
 @import url(../css/_admin.css);
 /*Pagina carrito*/
 @import url(../css/_carrito.css);
+/*Pagina Login*/
+@import url(../css/_login.css);
 
 
 /*Tipografia*/
@@ -259,7 +263,15 @@ html {
     color: var(--white-color);
     cursor: pointer;
 }
-
+.button-rectangle {
+    border: transparent;
+    outline: none;
+}
+.button-rectangle:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
 .p-relative {
     position: relative;
 }
