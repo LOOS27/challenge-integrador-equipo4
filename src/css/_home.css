@@ -1,0 +1,29 @@
+.home-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/*Banner*/
+.body-home.body-config .banner {
+    background-image: url(../img/home-funkos-banner_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 24rem;
+}
+
+.new-realease .product {
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    .products-home .product {
+        flex-wrap: wrap;
+    }
+    .new-realease .products {
+        justify-content: center;
+    }
+}

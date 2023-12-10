@@ -1,0 +1,481 @@
+/*Estilos en cada página*/
+/*Pagina header*/
+@import url(../css/_header.css);
+/*Pagina footer*/
+@import url(../css/_footer.css);
+/*Pagina home*/
+@import url(../css/_home.css);
+/*Pagina Shop*/
+@import url(../css/_shop.css);
+/*Pagina create*/
+@import url(../css/_create.css);
+/*Pagina admin*/
+@import url(../css/_admin.css);
+/*Pagina carrito*/
+@import url(../css/_carrito.css);
+/*Pagina Login*/
+@import url(../css/_login.css);
+/*Pagina register*/
+@import url(../css/_register.css);
+/*Pagina edit*/
+@import url(../css/_edit.css);
+
+
+/*Tipografia*/
+/*Importa desde Google Fonts Raleway con font-weight: 700, 500 y 400*/
+/*Importar desde Google Fonts Inter con font-weight: 700, 600, 500, 400 y 300*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@400;500;700&display=swap');
+
+.ff-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+.ff-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/*Font -weight*/
+.fw-700 {
+    font-weight: 700;
+}
+/*Solo usar fw-600 con tipografía Inter, ya que en Raleway no esta en Figma y no esta importada desde Google FOnts*/
+.fw-600 {
+    font-weight: 600;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-400 {
+    font-weight: 400;
+}
+/*Solo usar fw-300 con tipografía Inter, ya que en Raleway no esta en Figma y no esta importada desde Google FOnts*/
+.fw-300 {
+    font-weight: 300;
+}
+/*font-size*/
+.fs-2-875 {
+font-size: 2.875rem;
+
+}
+.fs-2-625 {
+font-size: 2.625rem;
+
+}
+.fs-2-375 {
+font-size: 2.375rem;
+
+}
+.fs-2 {
+    font-size: 2rem;
+}
+.fs-1-5 {
+font-size: 1.5rem;
+
+}
+.fs-1-25 {
+font-size: 1.25rem;
+
+}
+.fs-1-125 {
+font-size: 1.125rem;
+
+}
+.fs-1 {
+font-size: 1rem;
+
+}
+.fs-0-875 {
+font-size: 0.875rem;
+
+}
+.fs-0-75 {
+font-size: 0.75rem;
+
+}
+
+/*text-transform*/
+/*uppercase*/
+.tt-upper {
+    text-transform: uppercase;
+}
+
+:root {
+    --main-color: #FF3333;
+    --white-color: #ffffff;
+    --gray-1-color: #333333;
+    --dark-gray-color: #30343F;
+    --link-blue-color: #1D84B5;
+    --light-gray-color: #B9B9B9;
+    --black-color: #111111;
+    --black-2-color: #1F1F1F;
+    --black-3-color: #000000;
+    --white-off-color: #FAFAFF;
+    --secondary-color: #F24E1E;
+
+
+  }
+
+/*colores*/
+    /*Para textos*/
+.color-white-off {
+    color: var(--white-off-color);
+}
+.color-white {
+    color: var(--white-color);
+}
+.color-light-gray {
+    color: var(--light-gray-color);
+}
+.color-dark-gray {
+    color: var(--dark-gray-color);
+}
+.color-red {
+    color: var(--main-color);
+}
+.color-secondary {
+    color: var(--secondary-color);
+}
+.color-gray-1 {
+    color: var(--gray-1-color);
+}
+.color-black {
+    color: var(--black-color);
+}
+.color-black-2 {
+    color: var(--black-2-color);
+}
+.color-black-3 {
+    color: var(--black-3-color);
+}
+.color-link-blue {
+    color: var(--link-blue-color);
+}
+
+/*Para background*/
+.bg-white {
+    background-color: var(--white-color);
+}
+.bg-white-off {
+    background-color: var(--white-off-color);
+}
+.bg-light-gray {
+    background-color: var(--light-gray-color);
+}
+.bg-dark-gray {
+    background-color: var(--dark-gray-color);
+}
+.bg-red {
+    background-color: var(--main-color);
+}
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+.bg-gray-1 {
+    background-color: var(--gray-1-color);
+}
+.bg-black {
+    background-color: var(--black-color);
+}
+.bg-black-2 {
+    background-color: var(--black-2-color);
+}
+.bg-black-3 {
+    background-color: var(--black-3-color);
+}
+.bg-link-blue {
+    background-color: var(--link-blue-color);
+}
+
+/*Para bordes*/
+.bc-white-off {
+    border-color: var(--white-off-color);
+}
+.bc-white {
+    border-color: var(--white-color);
+}
+.bc-light-gray {
+    border-color: var(--light-gray-color);
+}
+.bc-dark-gray {
+    border-color: var(--dark-gray-color);
+}
+.bc-red {
+    border-color: var(--main-color);
+}
+.bc-secondary {
+    border-color: var(--secondary-color);
+}
+.bc-gray-1 {
+    border-color: var(--gray-1-color);
+}
+.bc-black {
+    border-color: var(--black-color);
+}
+.bc-black-2 {
+    border-color: var(--black-2-color);
+}
+.bc-black-3 {
+    border-color: var(--black-3-color);
+}
+.bc-link-blue {
+    border-color: var(--link-blue-color);
+}
+.b-b-1 {
+    border-bottom: 1px solid;
+}
+.b-b-2 {
+    border-bottom: 2px solid;
+}
+.b-b-3 {
+    border-bottom: 3px solid;
+}
+.b-b-4 {
+    border-bottom: 4px solid;
+}
+.b-b-5 {
+    border-bottom: 5px solid;
+}
+.b-bc-red {
+    border-bottom-color:var(--main-color) ;
+}
+
+/*Configuracion para body general */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+.body-config {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0px;
+    width: 100%;
+}
+/*container*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/*Estilo de botones generales*/
+
+.button-rounded {
+    border-radius: 2rem;
+    min-width: 200px;
+    border: transparent;
+    outline: none;
+}
+.button-rounded:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+.button-rectangle {
+    border: transparent;
+    outline: none;
+}
+.button-rectangle:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+
+.tags {
+    top: 0px;
+    right: 0px;
+}
+.tag-new {
+    background-color:var(--main-color);
+}
+
+/*Flexbox*/
+.d-flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-fill {
+    flex-grow: 1 !important;
+    flex-shrink: 1 !important;
+    flex-basis: auto !important;
+}
+.w-100 {
+    width: 100%;
+}
+/*.row {
+    display: flex;
+    flex-direction: row;
+
+}*/
+.a-items-center {
+    align-items: center;
+}
+.j-content-center {
+    justify-content: center;
+}
+.j-content-between {
+    justify-content: space-between;
+}
+.a-items-stretch {
+    align-items: stretch;
+}
+.gap-1 {
+    gap: 1rem;
+}
+
+
+/*Padding*/
+
+.p-0 {
+    padding: 0rem;
+}
+.p-s-0 {
+    padding-left: 0rem;
+}
+.p-e-0 {
+    padding-right: 0rem;
+}
+.p-t-0 {
+    padding-top: 0rem;
+}
+.p-b-0 {
+    padding-bottom: 0rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+.p-s-1 {
+    padding-left: 1rem;
+}
+.p-e-1 {
+    padding-right: 1rem;
+}
+.p-t-1 {
+    padding-top: 1rem;
+}
+.p-b-1 {
+    padding-bottom: 1rem;
+}
+
+.p-0-25 {
+    padding: 0.25rem;
+}
+.p-s-0-25 {
+    padding-left: 0.25rem;
+}
+.p-e-0-25 {
+    padding-right: 0.25rem;
+}
+.p-t-0-25 {
+    padding-top: 0.25rem;
+}
+.p-b-0-25 {
+    padding-bottom: 0.25rem;
+}
+
+.p-0-5 {
+    padding: 0.5rem;
+}
+.p-s-0-5 {
+    padding-left: 0.5rem;
+}
+.p-e-0-5 {
+    padding-right: 0.5rem;
+}
+.p-t-0-5 {
+    padding-top: 0.5rem;
+}
+.p-b-0-5 {
+    padding-bottom: 0.5rem;
+}
+
+/*Margin*/
+
+.m-0 {
+    margin: 0rem;
+}
+.m-s-0 {
+    margin-left: 0rem;
+}
+.m-e-0 {
+    margin-right: 0rem;
+}
+.m-t-0 {
+    margin-top: 0rem;
+}
+.m-b-0 {
+    margin-bottom: 0rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+.m-s-1 {
+    margin-left: 1rem;
+}
+.m-e-1 {
+    margin-right: 1rem;
+}
+.m-t-1 {
+    margin-top: 1rem;
+}
+.m-b-1 {
+    margin-bottom: 1rem;
+}
+
+.m-0-25 {
+    margin: 0.25rem;
+}
+.m-s-0-25 {
+    margin-left: 0.25rem;
+}
+.m-e-0-25 {
+    margin-right: 0.25rem;
+}
+.m-t-0-25 {
+    margin-top: 0.25rem;
+}
+.m-b-0-25 {
+    margin-bottom: 0.25rem;
+}
+
+.m-0-5 {
+    margin: 0.5rem;
+}
+.m-s-0-5 {
+    margin-left: 0.5rem;
+}
+.m-e-0-5 {
+    margin-right: 0.5rem;
+}
+.m-t-0-5 {
+    margin-top: 0.5rem;
+}
+.m-b-0-5 {
+    margin-bottom: 0.5rem;
+}
+.t-center {
+    text-align: center;
+}
+.t-right {
+    text-align: right;
+}

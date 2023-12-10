@@ -1,0 +1,14 @@
+.edit-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.edit-container .thumb-text {
+    border-top: 1px solid var(--main-color);
+}
+.edit-container .thumb-img {
+    width: 150px;
+}
+.edit-container .thumb-img img {
+    width: 100%;
+}
