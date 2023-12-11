@@ -104,6 +104,7 @@ font-size: 0.75rem;
     --main-color: #FF3333;
     --white-color: #ffffff;
     --gray-1-color: #333333;
+    --gray-2-color: #4F4F4F;
     --dark-gray-color: #30343F;
     --link-blue-color: #1D84B5;
     --light-gray-color: #B9B9B9;
@@ -112,8 +113,6 @@ font-size: 0.75rem;
     --black-3-color: #000000;
     --white-off-color: #FAFAFF;
     --secondary-color: #F24E1E;
-
-
   }
 
 /*colores*/
@@ -138,6 +137,9 @@ font-size: 0.75rem;
 }
 .color-gray-1 {
     color: var(--gray-1-color);
+}
+.color-gray-2 {
+    color: var(--gray-2-color);
 }
 .color-black {
     color: var(--black-color);
@@ -173,6 +175,9 @@ font-size: 0.75rem;
 }
 .bg-gray-1 {
     background-color: var(--gray-1-color);
+}
+.bg-gray-2 {
+    background-color: var(--gray-2-color);
 }
 .bg-black {
     background-color: var(--black-color);

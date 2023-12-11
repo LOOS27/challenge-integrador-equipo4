@@ -1,13 +1,21 @@
+.item-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
 .item-container .products-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
-.item-container .products .product {
+.item-container .products-container .product {
     text-decoration: none;
 }
 
 @media (max-width:768px) {
+    .item-container .product-card-content {
+        flex-direction: column;
+    }
     .item-container .products-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
