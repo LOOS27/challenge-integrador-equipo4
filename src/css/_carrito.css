@@ -52,3 +52,14 @@
     width: 1.75rem;
     height: 1.75rem;
 }
+.resumen-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    list-style: none;
+    max-width: 450px;
+}
+
+.resumen-box .button-rectangle {
+    grid-column: 1 / 3;
+}
