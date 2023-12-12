@@ -8,11 +8,21 @@ const res = require('express/lib/response');
 //Traingo el objeto Router
 const router = express.Router();
 
-router.get('/', (req,res) => res.send('Esta es la vista de Shop'));
-router.get('/item/:id', (req,res) => res.send('Esta es la vista del Item seleccionado'));
-router.post('/item/:id/add', (req,res) => res.send('Esta es la ruta para agregar un nuevo item'));
-router.get('/cart', (req, res) =>  res.send('Esta es la vista del Carrito'));
-router.post('/cart', (req, res) =>  res.send('Esta es la ruta para agregar item al carrito'));
+//Hacer destructuring de un objeto
+const {
+    shop, 
+    item, 
+    addItem, 
+    cart , 
+    addToCart
+} 
+= require('../controllers/shop.controller');
+
+router.get('/', shop);
+router.get('/item/:id', item );
+router.post('/item/:id/add', addItem);
+router.get('/cart', cart );
+router.post('/cart', addToCart );
 
 
 //Exporto la funcion

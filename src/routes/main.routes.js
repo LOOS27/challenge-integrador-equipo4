@@ -6,12 +6,15 @@ const express = require('express');
 //Traingo el objeto Router
 const router = express.Router();
 
+//LLamo importar controllers con objeto que contiene el detalle de páginas
+const controller = require('../controllers/main.controller');
 
 //Configuracion de respuestas
-router.get('/home', (req, res) => res.send('Esta es la vista de Home'));
-router.get('/contact', (req, res) => res.send('Esta es la vista de Contact'));
-router.get('/about', (req, res) => res.send('Esta es la vista sobre Nosotros'));
-router.get('/faqs', (req, res) => res.send('Esta es la vista de Preguntas Frecuentes'));
+router.get('/', controller.home);
+router.get('/home', controller.home);
+router.get('/contact', controller.contact);
+router.get('/about', controller.about);
+router.get('/faqs', controller.faqs);
 
 //Exporto la funcion
 

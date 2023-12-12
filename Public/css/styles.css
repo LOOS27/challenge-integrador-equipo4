@@ -335,6 +335,9 @@ html {
 .a-items-center {
     align-items: center;
 }
+.a-items-end {
+    align-items: end;
+}
 .j-content-center {
     justify-content: center;
 }
