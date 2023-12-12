@@ -7,6 +7,6 @@ const app = express();
 //Declaro variable del puerto.
 const PORT = 3004;
 
-app.use(express.static('public'));
+app.use(express.static('Public'));
 
 app.listen(PORT , () => console.log(`servidor corriendo en http://localhost${PORT}`));
