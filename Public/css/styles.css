@@ -255,6 +255,12 @@ html {
     overflow-y: auto;
     margin: 0px;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
 }
 /*container*/
 .container {

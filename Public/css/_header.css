@@ -21,6 +21,7 @@ header .logo {
 }
 .dropdown-menu {
     position: absolute;
+    z-index: 3;
     list-style: none;
     padding: 0.5rem;
     min-width: 200px;
