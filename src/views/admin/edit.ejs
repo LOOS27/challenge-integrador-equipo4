@@ -39,10 +39,10 @@
                 <div class="d-flex flex-wrap a-items-center gap-1">
                     <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
                         <div class="p-t-1 p-b-1">
-                            <label for="nombre-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">Nombre del producto:</label>
+                            <label for="nombre-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">Nombre del producto</label>
                         </div>
                         <div class="flex-fill p-t-1 p-b-1">
-                            <input name="nombre-producto-input" id="nombre-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="Kakashi Hatake Shippuden Saga">
+                            <input name="nombre-producto-input" id="nombre-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" value="<%=product.product_name%>">
                             </input>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
 
                 <div class="d-flex flex-wrap a-items-center gap-1">
                     <div class="d-flex flex-fill p-t-1 p-b-1">
-                        <textarea name="descripcion-producto-textarea" id="descripcion-producto-textarea" cols="30" rows="10" class="textarea-style ff-inter fw-400 fs-1-125 color-black-2 flex-fill" placeholder="Descripción del producto"></textarea>
+                        <textarea name="descripcion-producto-textarea" id="descripcion-producto-textarea" cols="30" rows="10" class="textarea-style ff-inter fw-400 fs-1-125 color-black-2 flex-fill" value=""><%=product.product_description%></textarea>
                         </textarea>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                             <label for="sku-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">SKU:</label>
                         </div>
                         <div class="flex-fill p-t-1 p-b-1">
-                            <input name="sku-producto-input" id="sku-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="SSK111AB001">
+                            <input name="sku-producto-input" id="sku-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" value="<%=product.sku%>">
                             </input>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                             <label for="precio-producto-input" class="ff-inter fw-400 fs-1-5 color-black-2">Precio:</label>
                         </div>
                         <div class="flex-fill p-t-1 p-b-1">
-                            <input type="number" name="precio-producto-input" id="precio-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="$ 0.000,00">
+                            <input type="number" name="precio-producto-input" id="precio-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" value="<%=product.price%>">
                             </input>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                             <label for="stock-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">Stock:</label>
                         </div>
                         <div class="flex-fill p-t-1 p-b-1">
-                            <input type="number" name="stock-producto-input" id="stock-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="0">
+                            <input type="number" name="stock-producto-input" id="stock-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" value="<%=product.stock%>">
                             </input>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                             <label for="descuento-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">Descuento:</label>
                         </div>
                         <div class="flex-fill p-t-1 p-b-1">
-                            <input type="number" name="descuento-producto-input" id="descuento-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="0%">
+                            <input type="number" name="descuento-producto-input" id="descuento-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" value="<%=product.discount%>">
                             </input>
                         </div>
                     </div>

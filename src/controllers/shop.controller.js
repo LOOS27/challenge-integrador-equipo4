@@ -1,6 +1,8 @@
 const path = require ('path');
+//Trae el método get all
+const { getAll , getOne } = require('../models/product.model');
 
-const data  = [
+const json  = [
     {
     product_id: 1,
     licence_name: "Pokemon",
@@ -15,18 +17,29 @@ const data  = [
     }
     ]
 module.exports = {
-    shop: (req , res) => {
-            
+    shop: async (req , res) => {
+        const data = await getAll();
+        //console.log(dbdata);
+        //En product model se configuró un return para atrapar errores, desde el if se evalua si hay o no error en la base.
+        /*if(dbdata.error) {
+
+        } else {
+            res.render (path.resolve(__dirname, '../views/shop/shop.ejs'), {
+                title: "Shop",
+                data
+            });
+        }*/
         res.render (path.resolve(__dirname, '../views/shop/shop.ejs'), {
             title: "Shop",
             data
-        });
+    });
     },
-    item: (req,res) => {
+    item: async (req,res) => {
         // Guarda en variable el id que viene de la request
         const itemId = req.params.id;
-        //Filtra dentro de la variable data para encontra el product id que coincida con ItemId (request param)
-        const item = data.find(item => item.product_id == itemId);
+        /*Filtra dentro de la variable data para encontra el product id que coincida con ItemId (request param)
+        const item = data.find(item => item.product_id == itemId);*/
+        const [item ] = await getOne(itemId);
 
         res.render (path.resolve(__dirname, '../views/shop/item.ejs'), {
             title: "Producto",

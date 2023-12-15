@@ -7,12 +7,12 @@
                     <label for="search"><img class="icono-search-size" src="../../img/buscar.svg" alt="search"></label>
                     <input type="search" id="search" name="admin-search" placeholder="Código, nombre o categoria" class="input-search-style ff-inter fw-500 fs-1-25 color-light-gray w-100" />
                 </div>
-                <div class="title p-t-1 d-flex j-content-between a-items-center">
+                <div class="title p-t-1 d-flex j-content-between a-items-center p-b-1 m-b-1">
                     <h1 class="m-0 ff-raleway fw-700 fs-2-625 color-black-2 tt-upper">Listado de productos</h1>
                     <button type="button" class="ff-inter fw-700 fs-1-5 color-black-2 tt-upper d-flex a-items-center gap-1 button-transparent-style">Agregar<img src="../../img/agregar.svg" alt="Agregar"></button>
                 </div>
 
-                <div class="header-listado-productos">
+                <div class="header-listado-productos p-t-1">
                     <div>
                         <h2 class="ff-inter fw-700 fs-1-5 color-black-2 m-t-0 m-b-0">ID</h2>
                     </div>
@@ -29,25 +29,31 @@
                     </div>
                 </div>
                 <div class="body-listado-productos">
+                    <%data.forEach( product => { %>
                     <div class="producto-item p-t-1 p-b-1">
                         <div>
-                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0">1</h2>
+                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0"><%=product.product_id%></h2>
                         </div>
                         <div>
-                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0">STW001001</h2>
+                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0"><%=product.product_sku%></h2>
                         </div>
                         <div>
-                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0">Baby Yoda Blueball</h2>
+                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0"><%=product.product_name%></h2>
                         </div>
                         <div>
-                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0 tt-upper">STAR WARS
+                            <h2 class="ff-inter fw-500 fs-1-5 color-black-2 m-t-0 m-b-0 tt-upper"><%=product.category_name%>
                             </h2>
                         </div>
                         <div class="d-flex a-items-center gap-1 j-content-center">
-                            <button class="button-transparent-style"><img src="../../img/editar.svg" alt=""></button>
+                            <a href="/admin/edit/<%= product.product_id %>" class="button-transparent-style"><img src="../../img/editar.svg" alt=""></a>
+                            <form action="">
                             <button class="button-transparent-style"><img src="../../img/eliminar.svg" alt=""></button>
+                            </form>
                         </div>
                     </div>
+                    <%
+                })%>
+                    
 
                 </div>
                </div>

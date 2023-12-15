@@ -6,15 +6,20 @@
                     <section class="product-card">
                         <div class="product-card-content d-flex a-items-center j-content-center">
                             <!--Left-->
-                            <picture class="w-100">
-                                <img src="<%=item.img_front%>" alt="Figura coleccionable de Baby Yoda" class="w-100">
-                            </picture>               
+                            <div class="d-flex flex-column">
+                                <picture class="w-100">
+                                    <img src="/img/<%=item.image_front%>" alt="<%=item.product_description%>" class="w-100">
+                                </picture>
+                                <picture class="w-100">
+                                    <img src="/img/<%=item.image_back%>" alt="<%=item.product_description%>" class="w-100">
+                                </picture>
+                            </div>               
                             <!--Right-->
                             <article class="w-100 d-flex gap-1 flex-column">
-                                <h3 class="ff-inter fw-500 fs-1 color-gray-1 m-0">STAR WARS</h3>
+                                <h3 class="ff-inter fw-500 fs-1 color-gray-1 m-0"><%=item.category_name%></h3>
                                 <h2 class="ff-inter fw-700 fs-2-375 color-black m-0"><%=item.product_name%></h2>
-                                <p class="ff-inter fw-400 fs-1-5 color-gray-1 m-0">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edicion limitada.</p>
-                                <p class="ff-inter fw-400 fs-2-375 color-gray-1 m-0">$1799,99</p>
+                                <p class="ff-inter fw-400 fs-1-5 color-gray-1 m-0"><%=item.product_description%></p>
+                                <p class="ff-inter fw-400 fs-2-375 color-gray-1 m-0">$<%=item.price%></p>
                                 <div class="d-flex gap-1 a-items-center">
                                     <div>
                                         <input type="number" name="" id="" class="input-number-carrito ff-inter fw-700 color-black-3 fs-1-25 p-1">
@@ -28,7 +33,7 @@
                                     </div>
                                 </div>
                                 
-                                <p class="ff-inter fw-700 fs-0-875 color-link-blue"><a href="#" target="_blank" rel="noopener noreferrer">Ver métodos de pago - </a>3 CUOTAS SIN INTERÉS</p>
+                                <p class="ff-inter fw-700 fs-0-875 color-link-blue"><a href="#" target="_blank" rel="noopener noreferrer">Ver métodos de pago - </a><%=item.dues%> CUotas sin interés</p>
                             </article>
                         </div>
                     </section>
