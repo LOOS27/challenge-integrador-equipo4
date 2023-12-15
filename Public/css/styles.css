@@ -350,6 +350,9 @@ footer{
 .j-content-between {
     justify-content: space-between;
 }
+.j-content-end {
+    justify-content: end;
+}
 .a-items-stretch {
     align-items: stretch;
 }

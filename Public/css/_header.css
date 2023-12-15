@@ -32,10 +32,10 @@ header .logo {
     display: flex;
     flex-direction: column;
     transition: all 0.2s;
+    top: initial;
 }
 .dropdown-item:hover {
     background-color: var(--main-color);
-    width: 100%;
 }
 
 #dropdown-menu {
@@ -90,6 +90,13 @@ header .logo {
     }
     .header-container nav > .link:not(:last-child) {
         padding-top: 1rem;
-        border-top: 1px solid var(--white-color);
+        border-top: 1px solid var(--gray-2-color);
+    }
+    .header-nav-container {
+        width: 100%;
+    }
+    .header-container .header-nav-container > nav > .link:not(:nth-child(1)) {
+        padding-top: 1rem;
+        border-top: 1px solid var(--gray-2-color);
     }
   }

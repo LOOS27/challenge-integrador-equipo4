@@ -52,12 +52,40 @@
                         <!--Box contiene los productos-->
                         <div class="products">
                                <div class="products-container">
+                                <%data.forEach( item => { %>
+                                    <a href="/shop/item/<%=item.product_id%>" class="product d-flex flex-column">
+                                        <div class="product-img p-relative">
+                                            <picture class="img-box img-box-front">
+                                                <source srcset="<%=item.img_front%>" media="(min-width: 600px)" />
+                                                <img class="w-100" src="<%=item.img_front%>" alt="<%=item.product_name%>" />
+                                            </picture>
+                                            <picture class="img-box img-box-back">
+                                                <source srcset="<%=item.img_back%>" media="(min-width: 600px)" />
+                                                <img class="w-100" src="<%=item.img_back%>"alt="<%=item.product_name%>" />
+                                            </picture>
+                                            <div class="tags p-absolute">
+                                                <p class="tag-new ff-inter fw-500 fs-0-875 color-white tt-upper p-0-5 m-t-0">Nuevo</p>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="ff-inter fw-500 fs-0-875 color-gray-1 tt-upper m-t-0 m-b-0-5"><%=item.licence_name%></h3>
+                                            <h2 class="ff-inter fw-700 fs-1-125 color-gray-1 tt-upper m-t-0 m-b-0-5"><%=item.product_name%></h2>
+                                            <p class="ff-inter fw-400 fs-1 color-gray-1 tt-upper m-t-0 m-b-0-5">$ <%=item.product_price%></p>
+                                            <p class="ff-inter fw-700 fs-0-75 tt-upper color-link-blue m-t-0 m-b-0">3 CUOTAS SIN INTERÉS</p>
+                                        </div>
+                                    </a>
+                                    <%
+                                })%>
                                  <!--Producto 1 -->
                                  <a href="#" class="product d-flex flex-column">
                                     <div class="product-img p-relative">
-                                        <picture>
-                                            <source srcset="../../img/trooper-1_1.png" media="(min-width: 600px)" />
-                                            <img src="../../img/trooper-1_1.png" alt="trooper" />
+                                        <picture class="img-box img-box-front">
+                                            <source srcset="../../img/multimedia/star-wars/trooper-1.webp" media="(min-width: 600px)" />
+                                            <img class="w-100" src="../../img/multimedia/star-wars/trooper-1.webp" alt="trooper" />
+                                        </picture>
+                                        <picture class="img-box img-box-back">
+                                            <source srcset="../../img/multimedia/star-wars/trooper-box.webp" media="(min-width: 600px)" />
+                                            <img class="w-100" src="../../img/multimedia/star-wars/trooper-box.webp" alt="trooper" />
                                         </picture>
                                         <div class="tags p-absolute">
                                             <p class="tag-new ff-inter fw-500 fs-0-875 color-white tt-upper p-0-5 m-t-0">Nuevo</p>
@@ -73,9 +101,13 @@
                                 <!--Producto 2 -->
                                 <a href="#" class="product d-flex flex-column">
                                     <div class="product-img p-relative">
-                                        <picture>
-                                            <source srcset="../../img/pidgeotto-1_1.png" media="(min-width: 600px)" />
-                                            <img src="../../img/pidgeotto-1_1.png" alt="pidgeotto" />
+                                        <picture class="img-box img-box-front">
+                                            <source srcset="../../img/multimedia/pokemon/pidgeotto-1.webp" media="(min-width: 600px)" />
+                                            <img class="w-100" src="../../img/multimedia/pokemon/pidgeotto-1.webp" alt="trooper" />
+                                        </picture>
+                                        <picture class="img-box img-box-back">
+                                            <source srcset="../../img/multimedia/pokemon/pidgeotto-box.webp" media="(min-width: 600px)" />
+                                            <img class="w-100" src="../../img/multimedia/pokemon/pidgeotto-box.webp" alt="trooper" />
                                         </picture>
                                         <div class="tags p-absolute">
                                             <p class="tag-new ff-inter fw-500 fs-0-875 color-white tt-upper p-0-5 m-t-0">Nuevo</p>
@@ -91,9 +123,13 @@
                                 <!--Producto 3 -->
                                 <a href="#" class="product d-flex flex-column">
                                     <div class="product-img p-relative">
-                                        <picture>
-                                            <source srcset="../../img/luna-1_1.png" media="(min-width: 600px)" />
-                                            <img src="../../img/luna-1_1.png" alt="Luna" />
+                                        <picture class="img-box img-box-front">
+                                            <source srcset="../../img/multimedia/harry-potter/luna-1.webp" media="(min-width: 600px)" />
+                                            <img class="w-100" src="../../img/multimedia/harry-potter/luna-1.webp" alt="trooper" />
+                                        </picture>
+                                        <picture class="img-box img-box-back">
+                                            <source srcset="../../img/multimedia/harry-potter/luna-box.webp" media="(min-width: 600px)" />
+                                            <img class="w-100" src="../../img/multimedia/harry-potter/luna-box.webp" alt="trooper" />
                                         </picture>
                                         <div class="tags p-absolute">
                                             <p class="tag-new ff-inter fw-500 fs-0-875 color-white tt-upper p-0-5 m-t-0">Nuevo</p>
@@ -106,60 +142,7 @@
                                         <p class="ff-inter fw-700 fs-0-75 tt-upper color-link-blue m-t-0 m-b-0">3 CUOTAS SIN INTERÉS</p>
                                     </div>
                                 </a>
-                                <!--Producto 1 -->
-                                <a href="#" class="product d-flex flex-column">
-                                    <div class="product-img p-relative">
-                                        <picture>
-                                            <source srcset="../../img/trooper-1_1.png" media="(min-width: 600px)" />
-                                            <img src="../../img/trooper-1_1.png" alt="trooper" />
-                                        </picture>
-                                        <div class="tags p-absolute">
-                                            <p class="tag-new ff-inter fw-500 fs-0-875 color-white tt-upper p-0-5 m-t-0">Nuevo</p>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="ff-inter fw-500 fs-0-875 color-gray-1 tt-upper m-t-0 m-b-0-5">Star Wars</h3>
-                                        <h2 class="ff-inter fw-700 fs-1-125 color-gray-1 tt-upper m-t-0 m-b-0-5">STORMTROOPER LIGHTSABER</h2>
-                                        <p class="ff-inter fw-400 fs-1 color-gray-1 tt-upper m-t-0 m-b-0-5">$ 1799,99</p>
-                                        <p class="ff-inter fw-700 fs-0-75 tt-upper color-link-blue m-t-0 m-b-0">3 CUOTAS SIN INTERÉS</p>
-                                    </div>
-                                </a>
-                                <!--Producto 2 -->
-                                <a href="#" class="product d-flex flex-column">
-                                    <div class="product-img p-relative">
-                                        <picture>
-                                            <source srcset="../../img/pidgeotto-1_1.png" media="(min-width: 600px)" />
-                                            <img src="../../img/pidgeotto-1_1.png" alt="pidgeotto" />
-                                        </picture>
-                                        <div class="tags p-absolute">
-                                            <p class="tag-new ff-inter fw-500 fs-0-875 color-white tt-upper p-0-5 m-t-0">Nuevo</p>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="ff-inter fw-500 fs-0-875 color-gray-1 tt-upper m-t-0 m-b-0-5">Pokemón</h3>
-                                        <h2 class="ff-inter fw-700 fs-1-125 color-gray-1 tt-upper m-t-0 m-b-0-5">PIDGEOTTO</h2>
-                                        <p class="ff-inter fw-400 fs-1 color-gray-1 tt-upper m-t-0 m-b-0-5">$ 1799,99</p>
-                                        <p class="ff-inter fw-700 fs-0-75 tt-upper color-link-blue m-t-0 m-b-0">3 CUOTAS SIN INTERÉS</p>
-                                    </div>
-                                </a>
-                                <!--Producto 3 -->
-                                <a href="#" class="product d-flex flex-column">
-                                    <div class="product-img p-relative">
-                                        <picture>
-                                            <source srcset="../../img/luna-1_1.png" media="(min-width: 600px)" />
-                                            <img src="../../img/luna-1_1.png" alt="Luna" />
-                                        </picture>
-                                        <div class="tags p-absolute">
-                                            <p class="tag-new ff-inter fw-500 fs-0-875 color-white tt-upper p-0-5 m-t-0">Nuevo</p>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h3 class="ff-inter fw-500 fs-0-875 color-gray-1 tt-upper m-t-0 m-b-0-5">HARRY POTTER</h3>
-                                        <h2 class="ff-inter fw-700 fs-1-125 color-gray-1 tt-upper m-t-0 m-b-0-5">LUNA LOVEGOOD LION MASK</h2>
-                                        <p class="ff-inter fw-400 fs-1 color-gray-1 tt-upper m-t-0 m-b-0-5">$ 1799,99</p>
-                                        <p class="ff-inter fw-700 fs-0-75 tt-upper color-link-blue m-t-0 m-b-0">3 CUOTAS SIN INTERÉS</p>
-                                    </div>
-                                </a>
+                                
                                </div>
                                  
                         </div>
