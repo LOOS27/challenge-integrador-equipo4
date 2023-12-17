@@ -11,6 +11,17 @@
 .item-container .products-container .product {
     text-decoration: none;
 }
+.item-container .product-card-content .product-img:hover .img-box-front {
+    display: none;
+    transition: all 0.2s;
+}
+.item-container .product-card-content .product-img:hover .img-box-back {
+    display: initial;
+}
+.item-container .product-card-content .product-img .img-box-back {
+    display: none;
+    transition: all 0.2s;
+}
 
 @media (max-width:768px) {
     .item-container .product-card-content {

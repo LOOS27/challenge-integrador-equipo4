@@ -39,7 +39,7 @@ module.exports = {
         const itemId = req.params.id;
         /*Filtra dentro de la variable data para encontra el product id que coincida con ItemId (request param)
         const item = data.find(item => item.product_id == itemId);*/
-        const [item ] = await getOne(itemId);
+        const [item ] = await getOne({product_id: itemId});
 
         res.render (path.resolve(__dirname, '../views/shop/item.ejs'), {
             title: "Producto",

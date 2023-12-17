@@ -21,6 +21,10 @@
 @import url(../css/_edit.css);
 /*Pagina item*/
 @import url(../css/_item.css);
+/*Glide Theme*/
+@import url(../css/_glide.theme.min.css);
+/*Glide Core*/
+@import url(../css/_glide.core.min.css);
 
 
 /*Tipografia*/

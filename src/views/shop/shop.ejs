@@ -55,12 +55,12 @@
                                 <%data.forEach( item => { %>
                                     <a href="/shop/item/<%=item.product_id%>" class="product d-flex flex-column">
                                         <div class="product-img p-relative">
-                                            <picture class="img-box img-box-front">
-                                                <source srcset="/img/<%=item.image_front%>" media="(min-width: 600px)" />
+                                            <picture class="img-box img-box-front w-100">
+                                                <source class="w-100" srcset="/img/<%=item.image_front%>" media="(min-width: 600px)" />
                                                 <img class="w-100" src="/img/<%=item.image_front%>" alt="<%=item.product_name%>" />
                                             </picture>
-                                            <picture class="img-box img-box-back">
-                                                <source srcset="/img/<%=item.image_back%>" media="(min-width: 600px)" />
+                                            <picture class="img-box img-box-back w-100">
+                                                <source class="w-100" srcset="/img/<%=item.image_back%>" media="(min-width: 600px)" />
                                                 <img class="w-100" src="/img/<%=item.image_back%>"alt="<%=item.product_name%>" />
                                             </picture>
                                             <div class="tags p-absolute">

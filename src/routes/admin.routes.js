@@ -30,7 +30,7 @@ router.get('/create', createView);
 //Antes de pasar por el controlador hay que subir los archivos
 router.post('/create', upload.array('images', 2 ), createItem);
 router.get('/edit/:id', editView);
-router.put('/edit/:id', editItem);
+router.put('/edit/:id', upload.array('images', 2), editItem);
 router.delete('/delete/:id', deleteItem);
 
 

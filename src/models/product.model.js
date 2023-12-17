@@ -47,7 +47,44 @@ const getOne = async (param) => {
 //Cargar producto 
 const create = async(params) => {
    try {
-      const [product] = await conn.query('INSERT INTO product (product_name, product_description, price, stock, discount, sku, dues, image_front, image_back, licence_id, category_id) VALUES ?;', params);
+      const [product] = await conn.query('INSERT INTO product (product_name, product_description, price, stock, discount, sku, dues, image_front, image_back, licence_id, category_id) VALUES ?;', [params]);
+      return product;
+   } catch (error) {
+      //throw error;
+      //console.log('Hemos encontrado un error: ' + error);
+      return {
+          error: true,
+          message: 'Hemos encontrado un error' + error,
+      }
+   } finally {
+      //Para liberar la conexión
+      conn.releaseConnection();
+   }
+   
+}
+//Cargar producto 
+const edit = async(params , id) => {
+   try {
+      const [product] = await conn.query('UPDATE product SET ? WHERE ?;', [params, id] );
+      return product;
+   } catch (error) {
+      //throw error;
+      //console.log('Hemos encontrado un error: ' + error);
+      return {
+          error: true,
+          message: 'Hemos encontrado un error' + error,
+      }
+   } finally {
+      //Para liberar la conexión
+      conn.releaseConnection();
+   }
+   
+}
+
+//Eliminar producto 
+const deleteOne = async(params) => {
+   try {
+      const [product] = await conn.query('DELETE FROM product WHERE ?', params);
       return product;
    } catch (error) {
       //throw error;
@@ -66,7 +103,9 @@ const create = async(params) => {
 module.exports = {
     getAll,
     getOne,
-    create
+    create,
+    edit,
+    deleteOne
 }
 
 /*Ver productos*/
