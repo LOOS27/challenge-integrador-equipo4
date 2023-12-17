@@ -24,10 +24,12 @@ const getAll = async () => {
 }
 
 //2 Trae un elemento
-const getOne = async (id) => {
+const getOne = async (param) => {
    try {
       //? espera un valor y por parametro solo se pasa ese valor
-      const [rows] = await conn.query('SELECT * FROM product WHERE product_id = ?;' , id);
+      //const [rows] = await conn.query('SELECT * FROM product WHERE product_id = ?;' , id);
+      //const [rows] = await conn.query('SELECT product.*, category.category_name, licence.licence_name FROM (product LEFT JOIN category ON product.category_id = category.category_id) LEFT JOIN licence ON product.licence_id = licence.licence_id WHERE product_id = ?;', id);
+      const [rows] = await conn.query('SELECT product.*, category.category_name, licence.licence_name FROM (product LEFT JOIN category ON product.category_id = category.category_id) LEFT JOIN licence ON product.licence_id = licence.licence_id WHERE ?;', param);
       return rows;
    } catch (error) {
       //throw error;
@@ -42,10 +44,29 @@ const getOne = async (id) => {
    }
 
 }
+//Cargar producto 
+const create = async(params) => {
+   try {
+      const [product] = await conn.query('INSERT INTO product (product_name, product_description, price, stock, discount, sku, dues, image_front, image_back, licence_id, category_id) VALUES ?;', params);
+      return product;
+   } catch (error) {
+      //throw error;
+      //console.log('Hemos encontrado un error: ' + error);
+      return {
+          error: true,
+          message: 'Hemos encontrado un error' + error,
+      }
+   } finally {
+      //Para liberar la conexión
+      conn.releaseConnection();
+   }
+   
+}
 
 module.exports = {
     getAll,
-    getOne
+    getOne,
+    create
 }
 
 /*Ver productos*/

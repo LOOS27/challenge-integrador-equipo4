@@ -6,136 +6,137 @@
                 <div class="title">
                     <h1 class="m-0 ff-raleway fw-700 fs-2-625 color-black-2 tt-upper">Crear nuevo item</h1>
                 </div>
-
-                <div class="d-flex flex-wrap a-items-center gap-1">
-                    <div class="d-flex flex-fill flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="categoria-select" class="ff-inter fw-300 fs-1-5 color-black-3">Categoría:</label>
-                        </div>
-                        <div class="flex-fill p-t-1 p-b-1">
-                            <select name="categoria-select" id="categoria-select" class="select-style ff-inter fw-500 fs-1-25 color-black-2 w-100">
-                                <option value="value0" selected class="color-light-gray">Seleccionar</option>
-                                <option value="value1" disabled class="color-light-gray">Value 1</option>
-                                <option value="value2" class="color-light-gray">Value 2</option>
-                                <option value="value3" class="color-light-gray">Value 3</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-fill flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="licencia-select" class="ff-inter fw-300 fs-1-5 color-black-3">Licencia:</label>
-                        </div>
-                        <div class="flex-fill p-t-1 p-b-1">
-                            <select name="licencia-select" id="licencia-select" class="select-style ff-inter fw-500 fs-1-25 color-black-2 w-100">
-                                <option value="value0" selected class="color-light-gray">Seleccionar</option>
-                                <option value="value1" disabled class="color-light-gray">Value 1</option>
-                                <option value="value2" class="color-light-gray">Value 2</option>
-                                <option value="value3" class="color-light-gray">Value 3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap a-items-center gap-1">
-                    <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="nombre-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">Nombre del producto:</label>
-                        </div>
-                        <div class="flex-fill p-t-1 p-b-1">
-                            <input name="nombre-producto-input" id="nombre-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="Kakashi Hatake Shippuden Saga">
-                            </input>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap a-items-center gap-1">
-                    <div class="d-flex flex-fill p-t-1 p-b-1">
-                        <textarea name="descripcion-producto-textarea" id="descripcion-producto-textarea" cols="30" rows="10" class="textarea-style ff-inter fw-400 fs-1-125 color-black-2 flex-fill" placeholder="Descripción del producto"></textarea>
-                        </textarea>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap a-items-center gap-1">
-                    <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="sku-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">SKU:</label>
-                        </div>
-                        <div class="flex-fill p-t-1 p-b-1">
-                            <input name="sku-producto-input" id="sku-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="SSK111AB001">
-                            </input>
-                        </div>
-                    </div>
-
-                    <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="precio-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">Precio:</label>
-                        </div>
-                        <div class="flex-fill p-t-1 p-b-1">
-                            <input type="number" name="precio-producto-input" id="precio-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="$ 0.000,00">
-                            </input>
-                        </div>
-                    </div>
-
-                    <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="stock-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">Stock:</label>
-                        </div>
-                        <div class="flex-fill p-t-1 p-b-1">
-                            <input type="number" name="stock-producto-input" id="stock-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="0">
-                            </input>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap a-items-center gap-1">
-                    <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="descuento-producto-input" class="ff-inter fw-400 fs-1-5 color-black-3">Descuento:</label>
-                        </div>
-                        <div class="flex-fill p-t-1 p-b-1">
-                            <input type="number" name="descuento-producto-input" id="descuento-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="0%">
-                            </input>
-                        </div>
-                    </div>
-
-                    <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="cuotas-producto-select" class="ff-inter fw-400 fs-1-5 color-black-3">Cuotas:</label>
-                        </div>
-                        <div class="flex-fill p-t-1 p-b-1">
-                            <select name="cuotas-producto-select" id="cuotas-producto-select" class="select-style ff-inter fw-500 fs-1-25 color-black-2 w-100">
-                                <option value="value0" selected class="color-light-gray">3 Cuotas sin interés</option>
-                                <option value="value1" disabled class="color-light-gray">Value 1</option>
-                                <option value="value2" class="color-light-gray">Value 2</option>
-                                <option value="value3" class="color-light-gray">Value 3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-wrap a-items-center gap-1">
+                <!--multipart/form-data me permite cargar archivos-->
+                <form action="/admin/create" method="POST" enctype="multipart/form-data">
                     <div class="d-flex flex-wrap a-items-center gap-1">
-                        <div class="p-t-1 p-b-1">
-                            <label for="imagenes-producto-select" class="ff-inter fw-400 fs-1-5 color-black-3">Imagenes:</label>
+                        <div class="d-flex flex-fill flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="categoria-select" class="ff-inter fw-300 fs-1-5 color-black-3">Categoría:</label>
+                            </div>
+                            <div class="flex-fill p-t-1 p-b-1">
+                                <select name="category" id="categoria-select" class="select-style ff-inter fw-500 fs-1-25 color-black-2 w-100">
+                                    
+                                    <option class="color-light-gray" selected disabled >Seleccionar</option>
+                                    <option value="1" class="color-light-gray">Figuras coleccionables</option>
+                                    <option value="2" class="color-light-gray">Remeras</option>
+                                    <option value="3" class="color-light-gray">LLaveros</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="p-t-1 p-b-1">
-                            <input type="file" name="" id="" class="input-file-style ff-inter fw-400 fs-1-125 color-black-2" placeholder="Elegir archivo">
+                        <div class="d-flex flex-fill flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="licencia-select" class="ff-inter fw-300 fs-1-5 color-black-3">Licencia:</label>
+                            </div>
+                            <div class="flex-fill p-t-1 p-b-1">
+                                <select name="licence" id="licencia-select" class="select-style ff-inter fw-500 fs-1-25 color-black-2 w-100">
+                                    <option class="color-light-gray" selected disabled >Seleccionar</option>
+                                    <option value="1"  class="color-light-gray">Harry Potter</option>
+                                    <option value="2"  class="color-light-gray">Star Wars</option>
+                                    <option value="3"  class="color-light-gray">Pokemon</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="d-flex flex-wrap a-items-center gap-1">
                     <div class="d-flex flex-wrap a-items-center gap-1">
-                        <div class="p-t-1">
-                            <button class="btn-rectangle-style bg-red color-white ff-inter fw-600 fs-0-875">Agregar producto</button>
+                        <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="product_name" class="ff-inter fw-400 fs-1-5 color-black-3">Nombre del producto:</label>
+                            </div>
+                            <div class="flex-fill p-t-1 p-b-1">
+                                <input name="product_name" id="nombre-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="Kakashi Hatake Shippuden Saga">
+                                </input>
+                            </div>
                         </div>
-                        <div class="p-t-1">
-                            <button class="btn-rectangle-style bg-red color-white ff-inter fw-600 fs-0-875">Limpiar</button>
+                    </div>
+
+                    <div class="d-flex flex-wrap a-items-center gap-1">
+                        <div class="d-flex flex-fill p-t-1 p-b-1">
+                            <textarea name="product_description" id="descripcion-producto-textarea" cols="30" rows="10" class="textarea-style ff-inter fw-400 fs-1-125 color-black-2 flex-fill" placeholder="Descripción del producto"></textarea>
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap a-items-center gap-1">
+                        <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="sku" class="ff-inter fw-400 fs-1-5 color-black-3">SKU:</label>
+                            </div>
+                            <div class="flex-fill p-t-1 p-b-1">
+                                <input name="sku" id="sku-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="SSK111AB001">
+                                </input>
+                            </div>
+                        </div>
+
+                        <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="price" class="ff-inter fw-400 fs-1-5 color-black-3">Precio:</label>
+                            </div>
+                            <div class="flex-fill p-t-1 p-b-1">
+                                <input type="number" name="price" id="precio-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="$ 0.000,00">
+                                </input>
+                            </div>
+                        </div>
+
+                        <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="stock" class="ff-inter fw-400 fs-1-5 color-black-3">Stock:</label>
+                            </div>
+                            <div class="flex-fill p-t-1 p-b-1">
+                                <input type="number" name="stock" id="stock-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="0">
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap a-items-center gap-1">
+                        <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="discount" class="ff-inter fw-400 fs-1-5 color-black-3">Descuento:</label>
+                            </div>
+                            <div class="flex-fill p-t-1 p-b-1">
+                                <input type="number" name="discount" id="descuento-producto-input" class="input-text-style ff-inter fw-400 fs-1-125 color-black-2 w-100" placeholder="0%">
+                                </input>
+                            </div>
+                        </div>
+
+                        <div class="flex-fill d-flex flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="dues" class="ff-inter fw-400 fs-1-5 color-black-3">Cuotas:</label>
+                            </div>
+                            <div class="flex-fill p-t-1 p-b-1">
+                                <select name="dues" id="cuotas-producto-select" class="select-style ff-inter fw-500 fs-1-25 color-black-2 w-100">
+                                    <option  class="color-light-gray" selected disabled>Seleccionar</option>
+                                    <option value="1" class="color-light-gray">3 cuotas sin interés</option>
+                                    <option value="2" class="color-light-gray">6 cuotas sin interés</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap a-items-center gap-1">
+                        <div class="d-flex flex-wrap a-items-center gap-1">
+                            <div class="p-t-1 p-b-1">
+                                <label for="imagenes-producto-select" class="ff-inter fw-400 fs-1-5 color-black-3">Imagenes:</label>
+                            </div>
+                            <div class="p-t-1 p-b-1">
+                                <input type="file" name="images" id="" class="input-file-style ff-inter fw-400 fs-1-125 color-black-2" placeholder="Elegir archivo" multiple>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap a-items-center gap-1">
+                        <div class="d-flex flex-wrap a-items-center gap-1">
+                            <div class="p-t-1">
+                                <button class="btn-rectangle-style bg-red color-white ff-inter fw-600 fs-0-875">Agregar producto</button>
+                            </div>
+                            <div class="p-t-1">
+                                <button class="btn-rectangle-style bg-red color-white ff-inter fw-600 fs-0-875">Limpiar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-               </div>
-
+                </form>
             </div>
         </div>
     </main>

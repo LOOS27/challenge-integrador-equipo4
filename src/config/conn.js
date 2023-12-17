@@ -1,5 +1,6 @@
 //LLamar al módulo de My sql 2
 const mysql = require('mysql2');
+require('dotenv').config();
 
 
 //Crear un pool de conexion
@@ -8,11 +9,11 @@ const mysql = require('mysql2');
 
 const pool = mysql.createPool(
     {
-    user: 'root',
+    user: process.env.DBUSER,
     password: '',
-    host: 'localhost',
-    port: 3306,
-    database: 'funko_schema',
+    host: process.env.DBHOST,
+    port: process.env.DBPORT,
+    database: process.env.DBSCHEMA,
     connectionLimit: 10,
     waitForConnections: true,
     queueLimit: 0,
